@@ -1,0 +1,34 @@
+Ranking de Pontuações: Criar um programa que permita ao utilizador inserir nomes e
+pontuações de jogadores e, em seguida, mostrar um ranking dos jogadores com as
+melhores pontuações.
+____________________________________________________________________________________
+
+Ranking = ()
+
+funcao inserir_jogador():
+    entrada("Digite o nome do jogador: ", nome)
+    entrada("Digite a pontuação de {nome}", pontuacao)
+
+    ranking.nome = pontuacao
+
+funcao mostrar_ranking():
+        imprime("Ranking dos jogadores: ")
+        para cada i em ranking:
+            imprime("{nome}: {pontuacao} pontos")
+
+funcao menu():
+    enquanto true:
+        imprime("Opções: ")
+        imprime("1. Inserir jogador e pontuação")
+        imprime("2. Mostrar ranking")
+        imprime("3. Sair")
+
+        entrada("Escolha uma opção: ", opcao)
+
+        se opcao = 1:
+            inserir_jogador()
+        se opcao = 2:
+            mostrar_ranking()
+        se opcao = 3:
+            imprime("Programa encerrado.")
+            

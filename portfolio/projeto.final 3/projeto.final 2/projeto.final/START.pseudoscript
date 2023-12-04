@@ -1,0 +1,48 @@
+
+importar registar2
+importar visualizar
+
+
+funcao menu():
+    imprime("""
+====================================================================================
+====================================================================================
+======                         Seja bem vindo!!                               ======
+======          Aqui poderá controlar as suas finanças pessoais.              ======
+====================================================================================
+====================================================================================                                
+======               1 - Registar um movimento;                               ======
+======               2 - visualizar os seus movimentos(total);                ======
+======               3 - visualizar os seus movimentos(por categoria);        ======
+======               q - quit                                                 ======
+====================================================================================
+====================================================================================
+    """)
+
+funcao executaropcao(opcao):
+    se opcao == 1:
+        registar2.registarMovimentos()
+    se opcao == 2:
+        visualizar.VisMovTo()
+    se opcao == 3:
+        visualizar.VisMovCat()
+
+opcao = ''
+enquanto opcao != q:
+    imprime(menu())
+    entrada("Escolha um opção: ", opcao)
+    executaropcao(opcao)
+imprime("Gracias! Volte sempre que precisar de ver a sua carteira mais vazia! ;)")
+
+
+    
+
+
+
+
+#execução 
+funcao RegistarMovimentos
+
+categorias = ()
+MontanteTotal = 0 
+funcao vizualizarMovimentos 
