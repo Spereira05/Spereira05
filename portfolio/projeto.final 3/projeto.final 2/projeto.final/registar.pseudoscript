@@ -1,0 +1,53 @@
+
+Modelo movimentos:
+    construtor(saldo, categoria, descricao):
+        movimentos.saldos = 0.00
+        movimentos.categoria = '' 
+        movimentos.descricao = ''
+        
+listaMovimentos = []
+
+funcao registarMovimento():
+    entrada("Em que categoria deseja guardar este movimento: ", novaCategoria)
+        para cada movimentos[i].categoria em movimentos:
+            se novaCategoria != movimentos[i].categoria:
+                funcao criarCategoria()
+            se novaCategoria == movimentos.categoria[nome]:
+                entrada("Digite o valor deseja movimentar:
+                ((-) representa a saída de dinheiro && (+) representa a entrada de dinheiro) ", Montante)
+                imprime("""
+                    Tem a certeza que deseja movimentar {montante}? 
+                    (1) - Sim, tenho a certeza;
+                    (2) - Não, atrás.
+                """)
+                entrada("Escolha uma opção: "opcao)
+                    se opcao == 1:
+                        retorna
+                    se opcao == 2:  
+                        funcao menu()
+                movimentos.categoria[nome].saldo == Montante + movimentos.categoria[nome].saldo
+                entrada("Agora escreva uma breve descrição: ", movimentos.categoria[nome].descricao)
+
+
+funcao criarCategoria():
+    novaCategoria = movimentos.categoria[nome].tamanho() + 1
+    movimentos.categoria[nome] = novaCategoria
+    entrada("Digite o valor deseja movimentar:
+    ((-) representa a saída de dinheiro && (+) representa a entrada de dinheiro) ", Montante)
+    imprime("""
+        Tem a certeza que deseja movimentar {montante}? 
+        (1) - Sim, tenho a certeza;
+        (2) - Não, atrás.
+    """)
+    entrada("Escolha uma opção: "opcao)
+        se opcao == 1:
+            retorna
+        se opcao == 2:  
+            registarMovimento()
+    movimentos.categoria[nome].saldo == Montante + movimentos.categoria[nome].saldo
+    entrada("Agora escreva uma breve descrição: ", movimentos.categoria[nome].descricao)
+        
+        
+
+
+       

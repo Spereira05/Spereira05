@@ -1,0 +1,26 @@
+carrinho = ()
+
+Imprime("Seja bem vindo ao nosso mercado digital!")
+
+
+funcao registarCompra():
+    Entrada("Digite aqui o produto e a quantidade que deseja adicionar ao seu carrinho:", produto, quantidade)
+        carrinho.produto = carrinho.produto + (produto * quantidade)
+
+funcao calcularPrecoFinal():
+    cada produto em carrinho:
+        carrinho.preco + (carrinho.preco + 1) = resultado
+            imprime("O preço total das compras é: '{resultado}'€")
+
+funcao menu():
+    enquanto true:
+        imprime ("1. Registar compra no carrinho")
+        imprime ("2. Calcular total de compras")
+        imprime ("3. Sair")
+        Entrada ("Escolha uma opção:", opcao)
+            se opcao = 1:
+                registarCompra
+            se opcao = 2:
+                calcularPrecoFinal
+            se opcao = 3:
+                imprime ("Obrigado por usar a nossa loja.")

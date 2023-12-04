@@ -1,0 +1,9 @@
+funcao addContacts(x, y):
+    nome.x -> numero.y 
+
+Entrada("Se quiser adicionar nome a agenda:", nome.x)
+
+Entrada("Adicione um numero ao nome:", numero.y)
+
+Agenda = ('nome.x' -> numero.y)
+        

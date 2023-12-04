@@ -1,0 +1,10 @@
+importar registar 
+
+funcao visMovCat():
+    para cada registar.saldoPC.chave em registar.saldoPC:
+    imprime(" {registar.saldoPC.chave} ->  {registar.saldoPC.valor}")
+
+
+funcao vsiMonTo():
+    imprime("O seu saldo total é de {registar.saldoTT}")
+

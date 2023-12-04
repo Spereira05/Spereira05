@@ -1,0 +1,16 @@
+Calculadora de Idade: Criar um programa que calcule a idade de várias pessoas com
+base no seu ano de nascimento. Nota: O aluno deve solicitar o ano de nascimento ao
+utilizador.
+___________________________________________________________________________________
+
+funcao CalcIdade():
+    Entrada("Digite o seu ano de nascimento:", ano_Nascimento)
+    Entrada("Digite o ano em que se encontra:", ano_Atual)
+    idade = ano_Atual - ano_Nascimento
+        retorne idade
+
+funcao menu():
+    imprime("Calculadora de idade")
+    CalcIdade
+    imprime("A idade é {idade} anos.")
+    

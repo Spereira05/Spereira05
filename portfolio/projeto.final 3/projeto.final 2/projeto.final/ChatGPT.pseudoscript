@@ -1,0 +1,71 @@
+# Registo de Despesas
+
+# Classe Despesa
+modelo Despesa:
+    construtor(montante, descricao, categoria):
+        Despesa.montante = montante
+        Despesa.descricao = descricao
+        Despesa.categoria = categoria
+
+# Classe RegistoDespesas
+modelo RegistoDespesas:
+    construtor():
+        RegistoDespesas.despesas = lista()
+
+    funcao adicionar_despesa(despesa):
+        RegistoDespesas.despesas.adicionar(despesa)
+
+    funcao visualizar_resumo():
+        resumo = dicionario()
+        cada despesa em RegistoDespesas.despesas:
+            se despesa.categoria em resumo:
+                resumo[despesa.categoria] += despesa.montante
+            senao:
+                resumo[despesa.categoria] = despesa.montante
+
+        imprime("Resumo das Despesas:")
+        cada categoria, total em resumo:
+            imprime(f"{categoria}: {total} unidades monetárias")
+
+        # Gráfico de Pizza para uma compreensão visual
+        RegistoDespesas.mostrar_grafico(resumo)
+
+    funcao mostrar_grafico(resumo):
+        categorias = lista_chaves(resumo)
+        valores = lista_valores(resumo)
+
+        imprime("Gráfico de Pizza:")
+        cada categoria, valor em zip(categorias, valores):
+            imprime(f"{categoria}: {valor}")
+
+# Função Principal
+funcao principal():
+    registo = RegistoDespesas()
+
+    enquanto verdadeiro:
+        imprime("\n1. Adicionar Despesa")
+        imprime("2. Visualizar Resumo")
+        imprime("3. Sair")
+
+        escolha = entrada("Escolha uma opção: ")
+
+        se escolha == "1":
+            montante = converter_numero(entrada("Montante gasto: "))
+            descricao = entrada("Breve descrição: ")
+            categoria = entrada("Categoria: ")
+            despesa = Despesa(montante, descricao, categoria)
+            registo.adicionar_despesa(despesa)
+            imprime("Despesa registada com sucesso!")
+
+        senao_se escolha == "2":
+            registo.visualizar_resumo()
+
+        senao_se escolha == "3":
+            imprime("Sair do programa. Até breve!")
+            quebrar
+
+        senao:
+            imprime("Opção inválida. Por favor, escolha novamente.")
+
+# Executar a Função Principal
+principal()

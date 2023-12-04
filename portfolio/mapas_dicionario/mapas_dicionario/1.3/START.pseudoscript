@@ -1,0 +1,22 @@
+Calculadora de Médias: Criar um programa que calcule a média de notas fornecidas
+pelo utilizador para vários alunos. Nota: Deve questionar o utilizador de todas as
+inserções necessárias.
+______________________________________________________________________________
+
+funcao CalcularMedia():
+    resultado = 0
+    cada i em lista:
+        resultado + i = resultado
+        resultado + (i+1) = resultado
+        resultado / lista.tamanho() = resultado
+            retorne resultado
+    turma = ('nome.aluno' -> lista.media)
+
+
+entrada ("Diga o nome do aluno e as suas notas:", x, z)
+
+x = nome do aluno 
+
+z = lista das notas do aluno
+
+funcao CalcularMedia()
