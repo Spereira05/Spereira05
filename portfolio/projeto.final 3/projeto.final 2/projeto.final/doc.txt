@@ -1,0 +1,25 @@
+Na visão do utilizador:
+    o programa começa com um menu onde são dadas escolhas ao utilizador. Escolhas em relação às suas seguintes ações.
+    São lhe dadas a escolher entre registar um novo movimento, visualizar o seu saldo total ou o saldo de cada categoria.
+    Ao escolher registar um novo movimento, ser-lhe-á perguntado o montante do movimento, a categoria para o qual será movimentado 
+    e um breve descricao do porque é que aquele movimento foi realizado.
+
+
+Na visão do programador:
+    começamos pelo menu: 
+        no menu temos a opcao de registar um novo movimento:
+            Comecei por criar um modelo chamado movimentos, que tem como caracteristicas, o saldo, a categoria e a descricao.
+            Criei também dois dicionários e uma variável.
+            Após isto, criei uma funcao registarMovimento() que pergunta o saldo que deseja movimentar, para que categoria deseja 
+            movimentar esse saldo e uma breve descricao para essa movimentacao.
+            Esta funcao vai também adicionar este saldo diretamente ao total da respetiva categoria e ao total de todas as categorias.
+        outra opcao de visualizar o nosso saldo por categoria:
+            Este sistema é concretizado através de um loop em que imprime cada categoria dentro do dicionário com o respetivo saldo.
+        outra opcao é visualizar este saldo total:
+            Este é realizado atraves de uma parte da funcao registarMovimento() onde são somados todos os saldos inseridos.
+        e a ultima opcao mas nao menos importante é o quit:
+            Este utilizado para que o utilizador posa sair do programa com uma mensagem humoristica.
+        como referido antes, isto é tudo orientado através do menu que onde está a funcao menu a dar as boas vindas ao utilizador,
+        a funcao executaropcao, que direciona o utilizador para a funcao correta atraves das opções dadas na funcao anterior.
+
+        

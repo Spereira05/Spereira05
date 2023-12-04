@@ -1,0 +1,31 @@
+Agenda de Compromissos: Criar um programa que permita ao utilizador agendar
+compromissos e a sua ordem. O programa deve mostrar os compromissos ordenados
+_____________________________________________________________________________
+
+Agenda = ()
+
+funcao agendarCompromisso():
+    entrada ("Digite a data, incluindo a hora, do seu compromisso:", data)
+    entrada ("Digite o nome do compromisso:", compromisso)
+        agenda.data = compromisso
+
+funcao mostrarCompromissos():
+    se agenda = (null)
+        imprime ("Você não tem compromissos registados. Comece por registar um compromisso")
+    
+        imprime ("Você tem compromissos agendados para {data} correspondente a {agenda.data}, respetivamente.", agenda.chaves, agenda.valores)
+
+funcao menu():
+    enquanto true:
+        imprime("1. Angendar Compromisso")
+        imprime("2. Mostrar compromissos")
+        imprime("3. Sair")
+
+        entrada("Escolha uma opção:", opcao)
+        se opcao = 1
+            agendarCompromissos()
+        se opcao = 2
+            mostrarCompromissos()
+        se opcao = 3
+            imprime ("Programa encerrado.")
+

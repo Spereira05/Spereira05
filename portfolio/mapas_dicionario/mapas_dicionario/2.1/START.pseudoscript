@@ -1,0 +1,13 @@
+Tradutor Simples: Criar um dicionário com algumas palavras em um idioma e suas
+traduções. O utilizador deve fornecer uma palavra e o programa deve traduzi-la. Nota:
+O aluno deve criar um dicionário de traduções e solicitar a palavra ao utilizador.
+
+
+dicionario.traducoes = ('casa' -> house,'carro' -> car, 'gato' -> cat, 'cachorro' -> dog, 'livro' -> book)
+    
+funcao Tradutor():
+    Entrada("Digite a sua palavra:", word)
+    se palavra existir em dicionario.traducoes:
+        traducao = dicionario.traducoes(word)
+            imprime("A tradução de '{word}' é '{traducao}'")
+        

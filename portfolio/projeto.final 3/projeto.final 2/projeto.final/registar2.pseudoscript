@@ -1,0 +1,26 @@
+modelo movimentos:
+    construtor(saldo, categoria, descricao):
+        movimentos.saldos = 0.00
+        movimentos.categoria = '' 
+        movimentos.descricao = ''
+        
+listaMovimentos = []
+saldoPC = [] #saldo por categoria
+saldoTT = 0  #saldo total
+
+funcao registarMovimento():
+    entrada("""Indique aqui o valor que quer movimentar:
+    ((-) representa a saída de dinheiro && (+) representa a entrada de dinheiro)  """, saldo)
+    entrada("indique em que categoria deseja adicionar este montante: ", categoria)
+    entrada("Escreva uma breve descrição para este montante: ", descricao)
+    movimento = movimentos(saldo, categoria, descricao)
+    listaMovimentos.adicionar(movimento)
+    
+    para cada saldoPC.chave em saldoPC:
+        se listaMovimentos[movimento].categoria não está em saldoPC.chave:
+            saldoPC.adicionar(listaMovimentos[movimento].categoria -> listaMovimentos[movimento].saldo)
+        se listaMovimentos[movimento].categoria está em saldoPC.chave:
+            listaMovimentos[movimento].saldo +=
+
+    saldoTT = saldo + saldoTT
+

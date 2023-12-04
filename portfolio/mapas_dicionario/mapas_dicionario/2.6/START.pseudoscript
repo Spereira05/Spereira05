@@ -1,0 +1,21 @@
+Dicionário de Sinónimos: Criar um programa que forneça sinónimos para palavras
+fornecidas pelo utilizador. Nota: O aluno deve criar um dicionário de sinónimos.
+________________________________________________________________________________
+
+dicionario_de_sinonimos = ()
+
+funcao criar_dicionario():
+    entrada("Introduza um palavra; ", palavra)
+    entrada("Introduza uma palavra sinónima", dicionario_de_sinonimos.['palavra'])
+
+funcao obter_sinonimos(palavra):
+    se palavra = dicionario_de_sinonimos.chave:
+        retorne dicionario_de_sinonimos.palavra
+    senao:
+        imprime("Nenhum sinónimo encontrado para esta palavra.")
+
+funcao menu():
+    enquanto true:
+        entrada("Digite uma palavra para obter sinónimos:", palavra)
+
+            
