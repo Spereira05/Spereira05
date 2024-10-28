@@ -9,7 +9,7 @@
             <mxPoint x="420" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6pC5uPO0dv5MgXKEyMFG-1" value="Usuário:&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;- nome: string&lt;/div&gt;&lt;div&gt;- telemóvel: telemóvel&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Perfil: perfil&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- status: boolean&lt;/div&gt;&lt;div&gt;- endereço: endereço&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="6pC5uPO0dv5MgXKEyMFG-1" value="Usuário:&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;- nome: string&lt;/div&gt;&lt;div&gt;- telemóvel: telemóvel&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Perfil: perfil&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- status: boolean&lt;/div&gt;&lt;div&gt;- endereço: endereço&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="340" y="340" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="6pC5uPO0dv5MgXKEyMFG-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6pC5uPO0dv5MgXKEyMFG-3">
@@ -17,10 +17,10 @@
             <mxPoint x="340" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6pC5uPO0dv5MgXKEyMFG-3" value="Perfil:&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;- perfil: perfil&lt;/div&gt;&lt;div&gt;- foto: string&lt;/div&gt;&lt;div&gt;- descrição: string&lt;/div&gt;&lt;div&gt;-posição: string&lt;/div&gt;&lt;div&gt;- casa: string&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="6pC5uPO0dv5MgXKEyMFG-3" value="Perfil:&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;- perfil: perfil&lt;/div&gt;&lt;div&gt;- foto: string&lt;/div&gt;&lt;div&gt;- descrição: string&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="120" y="360" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="6pC5uPO0dv5MgXKEyMFG-7" value="Qualifica" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="6pC5uPO0dv5MgXKEyMFG-7" value="Qualifica:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="250" y="390" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6pC5uPO0dv5MgXKEyMFG-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6pC5uPO0dv5MgXKEyMFG-1">
@@ -29,20 +29,17 @@
             <mxPoint x="240" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6pC5uPO0dv5MgXKEyMFG-10" value="Telefone:&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;- número: int&lt;/div&gt;&lt;div&gt;- redes: string&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="6pC5uPO0dv5MgXKEyMFG-10" value="Telefone:&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;tipo: int&lt;/div&gt;&lt;div&gt;- número: int&lt;/div&gt;&lt;div&gt;- redes: string&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="120" y="120" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="6pC5uPO0dv5MgXKEyMFG-11" value="Possui" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="6pC5uPO0dv5MgXKEyMFG-11" value="Possui:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="290" y="270" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6pC5uPO0dv5MgXKEyMFG-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6pC5uPO0dv5MgXKEyMFG-1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="270" as="sourcePoint" />
-            <mxPoint x="600" y="240" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="6pC5uPO0dv5MgXKEyMFG-16" value="Casa:&lt;div&gt;- id: int&lt;/div&gt;&lt;div&gt;tipo: string&lt;/div&gt;&lt;div&gt;- horário: string&lt;/div&gt;&lt;div&gt;- posição: string&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="6pC5uPO0dv5MgXKEyMFG-15" value="Documento:&lt;div&gt;-&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="600" y="120" width="120" height="120" as="geometry" />
+        <mxCell id="6pC5uPO0dv5MgXKEyMFG-17" value="Trabalha em:" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="270" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
